@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants" >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:id="@+id/listview_item_2"
+        android:adjustViewBounds="true">
+        <TextView
+            android:id="@+id/item_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/item_thing"
+            android:layout_below="@id/item_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:textSize="23dp"/>
+
+        <ImageButton
+            android:id="@+id/item_button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:height="35dp"
+            android:width="35dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@mipmap/unselected"
+            android:focusable="false"  />
+
+        <TextView
+            android:id="@+id/dayinweek"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="23dp"
+            android:layout_alignTop="@id/item_thing"
+            android:textColor="#00ff00"/>
+    </RelativeLayout>
+
+</LinearLayout>
